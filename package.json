@@ -7,7 +7,7 @@
     "dev": "watch 'yarn build' lib",
     "build": "babel lib -d dist",
     "lint": "xo lib/*",
-    "prepublish": "yarn lint && yarn build",
+    "prepare": "yarn lint && yarn build",
     "release": "np"
   },
   "babel": {
