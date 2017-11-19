@@ -1,0 +1,48 @@
+{
+  "name": "abbreviator",
+  "version": "0.0.1",
+  "description": "Generate abbreviations out of sentences",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "watch 'yarn build' lib",
+    "build": "babel lib -d dist",
+    "lint": "xo lib/*",
+    "prepublish": "yarn lint && yarn build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "esnext": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicksp/abbreviator.git"
+  },
+  "keywords": [
+    "acronym",
+    "generate",
+    "abbreviation"
+  ],
+  "author": "Nick S. Plekhanov <nickatgit@yandex.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicksp/abbreviator/issues"
+  },
+  "homepage": "https://github.com/nicksp/abbreviator#readme",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "np": "^2.17.0",
+    "watch": "^1.0.2",
+    "xo": "^0.18.2"
+  }
+}
